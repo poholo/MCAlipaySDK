@@ -1,0 +1,2 @@
+# MCAlipaySDK
+MCAlipaySDK是对AlipaySDK的映射，使用pod依赖管理，便于开发者快速集成AlipaySDK的支付授权等功能。
