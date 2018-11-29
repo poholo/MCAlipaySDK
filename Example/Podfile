@@ -1,0 +1,5 @@
+platform: ios
+
+target 'AliSDKDemo' do
+	pod 'MCAlipaySDK', git: 'https://github.com/poholo/MCAlipaySDK'
+end
