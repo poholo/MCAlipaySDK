@@ -1,0 +1,16 @@
+PODS:
+  - MCAlipaySDK (15.5.7)
+
+DEPENDENCIES:
+  - MCAlipaySDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MCAlipaySDK
+
+SPEC CHECKSUMS:
+  MCAlipaySDK: 7a5b8eb0dbc55fd9c8144707780d421677f710bd
+
+PODFILE CHECKSUM: 3537eaefb632b3633eb4a96c5488626fb6fa5184
+
+COCOAPODS: 1.5.3

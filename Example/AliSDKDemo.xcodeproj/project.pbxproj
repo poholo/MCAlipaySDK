@@ -31,10 +31,12 @@
 		65781B351F9EF1F300712C9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65781B341F9EF1EE00712C9D /* UIKit.framework */; };
 		65781B371F9EF20000712C9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65781B361F9EF1FC00712C9D /* Foundation.framework */; };
 		65781B391F9EF20C00712C9D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65781B381F9EF20700712C9D /* CFNetwork.framework */; };
-		65CADA2B1FA1E9B100EAAB4F /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65CADA2A1FA1E9B100EAAB4F /* AlipaySDK.bundle */; };
+		C6036AC0996538FDBC8C6F14 /* libPods-AliSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D4E69F577018B0AB558B12 /* libPods-AliSDKDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		598771C5A1160054B6920DE1 /* Pods-AliSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliSDKDemo/Pods-AliSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		63D4E69F577018B0AB558B12 /* libPods-AliSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65781ACD1F9EEA0800712C9D /* AliSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65781AD01F9EEA0800712C9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65781AD11F9EEA0800712C9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 		65781B341F9EF1EE00712C9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65781B361F9EF1FC00712C9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65781B381F9EF20700712C9D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		65CADA2A1FA1E9B100EAAB4F /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = ../AlipaySDK.bundle; sourceTree = "<group>"; };
+		8DFE1051C164CB903B37C3B3 /* Pods-AliSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliSDKDemo/Pods-AliSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				65781B271F9EF19800712C9D /* libc++.tbd in Frameworks */,
 				65781B201F9EF0FD00712C9D /* libssl.a in Frameworks */,
 				65781B281F9EF19800712C9D /* libz.tbd in Frameworks */,
+				C6036AC0996538FDBC8C6F14 /* libPods-AliSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +102,10 @@
 		65781AC41F9EEA0800712C9D = {
 			isa = PBXGroup;
 			children = (
-				65CADA2A1FA1E9B100EAAB4F /* AlipaySDK.bundle */,
 				65781ACF1F9EEA0800712C9D /* AliSDKDemo */,
 				65781ACE1F9EEA0800712C9D /* Products */,
 				65781B1C1F9EF0FC00712C9D /* Frameworks */,
+				BE7961D686E58D50801C27F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,8 +168,18 @@
 				65781B211F9EF13D00712C9D /* AlipaySDK.framework */,
 				65781B1D1F9EF0FC00712C9D /* libcrypto.a */,
 				65781B1E1F9EF0FD00712C9D /* libssl.a */,
+				63D4E69F577018B0AB558B12 /* libPods-AliSDKDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE7961D686E58D50801C27F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE1051C164CB903B37C3B3 /* Pods-AliSDKDemo.debug.xcconfig */,
+				598771C5A1160054B6920DE1 /* Pods-AliSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65781AF91F9EEA0800712C9D /* Build configuration list for PBXNativeTarget "AliSDKDemo" */;
 			buildPhases = (
+				13805E7DE41697B93675DF45 /* [CP] Check Pods Manifest.lock */,
 				65781AC91F9EEA0800712C9D /* Sources */,
 				65781ACA1F9EEA0800712C9D /* Frameworks */,
 				65781ACB1F9EEA0800712C9D /* Resources */,
+				80B628088DFDD8F4E9A19286 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CADA2B1FA1E9B100EAAB4F /* AlipaySDK.bundle in Resources */,
 				65781ADD1F9EEA0800712C9D /* LaunchScreen.storyboard in Resources */,
 				65781ADA1F9EEA0800712C9D /* Assets.xcassets in Resources */,
 				65781AD81F9EEA0800712C9D /* Main.storyboard in Resources */,
@@ -236,6 +250,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13805E7DE41697B93675DF45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AliSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B628088DFDD8F4E9A19286 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AliSDKDemo/Pods-AliSDKDemo-resources.sh",
+				"${PODS_ROOT}/MCAlipaySDK/SDK/AlipaySDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliSDKDemo/Pods-AliSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65781AC91F9EEA0800712C9D /* Sources */ = {
@@ -381,6 +434,7 @@
 		};
 		65781AFA1F9EEA0800712C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFE1051C164CB903B37C3B3 /* Pods-AliSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -409,6 +463,7 @@
 		};
 		65781AFB1F9EEA0800712C9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598771C5A1160054B6920DE1 /* Pods-AliSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
