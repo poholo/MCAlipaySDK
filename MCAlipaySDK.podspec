@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "MCAlipaySDK"
-s.version          = "15.5.7"
+s.version          = "15.5.9"
 s.summary          = "AlipaySDK的映射"
 s.description      = "MCAlipaySDK是对AlipaySDK的映射，使用pod依赖管理，便于开发者快速集成AlipaySDK的支付授权等功能。"
 s.license          = 'MIT'
