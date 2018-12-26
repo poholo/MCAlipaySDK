@@ -1,16 +1,21 @@
 PODS:
-  - MCAlipaySDK (15.5.7)
+  - MCAlipaySDK (15.5.9)
 
 DEPENDENCIES:
-  - MCAlipaySDK
+  - MCAlipaySDK (from `https://github.com/poholo/MCAlipaySDK`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - MCAlipaySDK
+EXTERNAL SOURCES:
+  MCAlipaySDK:
+    :git: https://github.com/poholo/MCAlipaySDK
+
+CHECKOUT OPTIONS:
+  MCAlipaySDK:
+    :commit: ac77d1873a68ea05120a204053638e003666668b
+    :git: https://github.com/poholo/MCAlipaySDK
 
 SPEC CHECKSUMS:
-  MCAlipaySDK: 7a5b8eb0dbc55fd9c8144707780d421677f710bd
+  MCAlipaySDK: 68028a099792f811b61899e9b79ea829073e6cc8
 
-PODFILE CHECKSUM: 3537eaefb632b3633eb4a96c5488626fb6fa5184
+PODFILE CHECKSUM: ceb87c0198e04379efa7d929e53d2f5a696861d0
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

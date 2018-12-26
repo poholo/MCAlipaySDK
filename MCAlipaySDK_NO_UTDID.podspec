@@ -11,8 +11,9 @@ s.source           = { :git => "https://github.com/poholo/MCAlipaySDK.git", :tag
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
-s.vendored_frameworks = 'MCAlipaySDK_NO_UTDID/AlipaySDK.framework'
+s.vendored_frameworks = 'SDK_NO_UTDID/AlipaySDK.framework'
 s.resources = ['SDK/*.{bundle}']
+
 s.ios.frameworks = 'CoreTelephony', 'SystemConfiguration', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork', 'CoreMotion'
 s.ios.libraries = 'z', 'c++'
 
