@@ -20,7 +20,6 @@ s.subspec 'Base' do |sub|
 end
 
 s.subspec 'NO_UTDID' do |sub|
-    sub.dependency 'AlicloudUTDID'
     sub.vendored_frameworks = 'SDK_NO_UTDID/AlipaySDK.framework'
     sub.resources = ['SDK_NO_UTDID/*.{bundle}']
 end
