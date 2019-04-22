@@ -1,9 +1,19 @@
 # MCAlipaySDK
 MCAlipaySDK是对AlipaySDK的映射，使用pod依赖管理，便于开发者快速集成AlipaySDK的支付授权等功能。
 
+# 版本
+```text
+15.6.2 support NO_UTDID
+```
+
 # 集成方式
 ```
 pod 'MCAlipaySDK'
+
+有UTDID冲突的请用
+pod 'MCAlipaySDK/NO_UTDID'
+在你的podfile文件加入
+source 'https://github.com/aliyun/aliyun-specs.git'
 
 老版本请使用(3.0)之前
 使用 Cocoapods-depend 插件

@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1A6660EF7395EB3CE62227C3 /* MCAlipaySDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; name = MCAlipaySDK.podspec; path = ../MCAlipaySDK.podspec; sourceTree = "<group>"; };
-		1A6661427ABFA2B94BFBE3CF /* MCAlipaySDK_NO_UTDID.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; name = MCAlipaySDK_NO_UTDID.podspec; path = ../MCAlipaySDK_NO_UTDID.podspec; sourceTree = "<group>"; };
+		1A66695758D9AFE69CFCF413 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		598771C5A1160054B6920DE1 /* Pods-AliSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliSDKDemo/Pods-AliSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		63D4E69F577018B0AB558B12 /* libPods-AliSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65781ACD1F9EEA0800712C9D /* AliSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 				65781B1C1F9EF0FC00712C9D /* Frameworks */,
 				BE7961D686E58D50801C27F3 /* Pods */,
 				1A6660EF7395EB3CE62227C3 /* MCAlipaySDK.podspec */,
-				1A6661427ABFA2B94BFBE3CF /* MCAlipaySDK_NO_UTDID.podspec */,
+				1A66695758D9AFE69CFCF413 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};

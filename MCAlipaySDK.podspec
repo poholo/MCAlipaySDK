@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "MCAlipaySDK"
-s.version          = "15.5.9.1"
+s.version          = "15.6.2"
 s.summary          = "AlipaySDK的映射"
 s.description      = "MCAlipaySDK是对AlipaySDK的映射，使用pod依赖管理，便于开发者快速集成AlipaySDK的支付授权等功能。"
 s.license          = 'MIT'
@@ -11,7 +11,7 @@ s.source           = { :git => "https://github.com/poholo/MCAlipaySDK.git", :tag
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
-s.default_subspec = 'NO_UTDID'
+s.default_subspec = 'Base'
 
 #组件对外提供服务接口
 s.subspec 'Base' do |sub|
@@ -20,6 +20,7 @@ s.subspec 'Base' do |sub|
 end
 
 s.subspec 'NO_UTDID' do |sub|
+    sub.dependency 'AlicloudUTDID'
     sub.vendored_frameworks = 'SDK_NO_UTDID/AlipaySDK.framework'
     sub.resources = ['SDK_NO_UTDID/*.{bundle}']
 end
